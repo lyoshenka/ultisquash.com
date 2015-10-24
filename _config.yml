@@ -1,0 +1,26 @@
+# Site settings
+baseurl: "" # the subpath of your site, e.g. /blog/
+
+# Build settings
+markdown: kramdown
+
+
+### site serving configuration ###
+exclude: [CNAME, README.txt, LICENSE.txt, .gitignore]
+permalink: / ## disables post output
+timezone: null
+highlighter: pygments
+
+
+### template colors, used site-wide via css ###
+colors:
+  black:     '#111111'
+  white:     '#f8f8f8'
+  blue:      '#49a7e9'
+  green:     '#9bcf2f'
+  purple:    '#c869bf'
+  orange:    '#fab125'
+  turquoise: '#0fbfcf'
+
+#kramdown:
+#  auto_ids:  false
