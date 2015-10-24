@@ -1,5 +1,6 @@
 # Site settings
 baseurl: "" # the subpath of your site, e.g. /blog/
+#sass_dir: _sass
 
 # Build settings
 markdown: kramdown
