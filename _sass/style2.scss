@@ -1,0 +1,98 @@
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button,
+.button {
+  &.style2 {
+    background: none;
+    color: #606167;
+    box-shadow: inset 0px 0px 2px 0px #a0a1a7;
+
+    &:hover {
+      box-shadow: inset 0px 0px 2px 0px #606167;
+    }
+
+    &:active {
+      box-shadow: inset 0px 0px 2px 0px #202127;
+    }
+  }
+}
+
+
+ul.style2 {
+  li {
+    border-top: solid 1px #eee;
+    padding: 1.5em 0 0 0;
+    margin: 1.5em 0 0 0;
+
+    &:first-child {
+      border-top: 0;
+      padding-top: 0;
+      margin-top: 0;
+    }
+  }
+}
+
+.wrapper.style2 {
+  background: #fff;
+
+  .title {
+    background: #fff;
+    color: $color-black-text;
+  }
+}
+
+
+.footer-wrapper {
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"],
+  button,
+  .button {
+    &.style2 {
+      &:active {
+        box-shadow: inset 0px 0px 2px 0px rgba(255, 255, 255, 0.75);
+      }
+    }
+  }
+}
+
+.intro > .style2 {
+  font-weight: 700;
+  color: #fff;
+  border-radius: 0.35em;
+  box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.25);
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+
+@include breakpoint(desktop) {
+  .intro > .style2 {
+    font-size: 2.75em;
+    letter-spacing: 0.075em;
+    line-height: 1.35em;
+    padding: 1em 0 1em 0;
+    margin-bottom: 1em;
+  }
+}
+
+
+@include breakpoint(tablet) {
+  .intro > .style2 {
+    font-size: 2.25em;
+  }
+}
+
+
+@include breakpoint(mobile) {
+.intro .style2 {
+    font-size: 1.5em;
+    letter-spacing: 0.05em;
+    line-height: 1.25em;
+    padding: 1.25em;
+  }
+}

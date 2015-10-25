@@ -17,7 +17,7 @@
 		select,
 		textarea {
 			position: relative;
-			-ms-behavior: url('assets/js/ie/PIE.htc');
+			-ms-behavior: url('/js/ie/PIE.htc');
 		}
 	}
 
@@ -25,7 +25,7 @@
 	input[type="submit"],
 	input[type="reset"] {
 		position: relative;
-		-ms-behavior: url('assets/js/ie/PIE.htc');
+		-ms-behavior: url('/js/ie/PIE.htc');
 	}
 
 	.button,
@@ -34,7 +34,7 @@
 	#nav > ul,
 	.dropotron {
 		position: relative;
-		-ms-behavior: url('assets/js/ie/PIE.htc');
+		-ms-behavior: url('/js/ie/PIE.htc');
 	}
 
 /* Section/Article */
@@ -57,8 +57,8 @@
 		}
 	}
 
-	#header-wrapper {
-		-ms-behavior: url('assets/js/ie/backgroundsize.min.htc');
+	.header-wrapper {
+		-ms-behavior: url('/js/ie/backgroundsize.min.htc');
 	}
 
 /* Copyright */

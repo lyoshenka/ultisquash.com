@@ -1,0 +1,62 @@
+
+/* Tablet Only */
+
+@include breakpoint(tablet) {
+
+  /* Basic */
+
+  body {
+    min-width: 1000px;
+    font-size: 12pt;
+    line-height: 1.5em;
+    letter-spacing: 0.015em;
+  }
+
+  input, select, textarea {
+    font-size: 12pt;
+    line-height: 1.5em;
+    letter-spacing: 0.015em;
+  }
+
+  body {
+    min-width: 960px;
+  }
+
+/* Wrappers */
+
+  .wrapper {
+    padding: 4em 0 7em 0;
+  }
+
+  .intro-wrapper {
+    padding-bottom: 7em;
+  }
+
+  .footer-wrapper {
+    hr {
+      margin: 3em 0 3em 0;
+    }
+  }
+
+/* Header */
+
+  #header {
+    padding: 14em 0;
+  }
+
+/* Logo */
+
+  #logo {
+    margin-top: -0.5em !important;
+
+    h1 {
+      font-size: 1.75em;
+    }
+  }
+
+/* Copyright */
+
+  #copyright {
+    margin: 3em 0 0 0;
+  }
+}

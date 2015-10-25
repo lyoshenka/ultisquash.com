@@ -1,0 +1,115 @@
+header.style1 {
+	text-align: center;
+
+	h2 {
+		font-weight: 700;
+	}
+
+	p, a {
+		color: $color-grey-text-header;
+	}
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button,
+.button{
+  &.style1 {
+    background: $color-red;
+    color: #fff;
+
+    &:hover {
+      background-color: #f98780;
+    }
+
+    &:active {
+      background-color: #d96760;
+    }
+  }
+}
+
+.wrapper.style1 {
+  background: $color-red;
+  color: #eee;
+  color: rgba(255, 255, 255, 0.75);
+
+  .title {
+    background: $color-red;
+    color: #fff;
+  }
+
+  h1, h2, h3, h4, h5, h6, strong, b, a {
+    color: #fff;
+  }
+}
+
+.footer-wrapper header.style1 {
+  h2 {
+    color: #fff;
+  }
+
+  .p {
+    color: inherit;
+  }
+}
+
+@include breakpoint(desktop) {
+  header.style1 {
+    padding: 3em 0 3em 0;
+
+    h2 {
+      font-size: 2em;
+      letter-spacing: 0.075em;
+      line-height: 1.5em;
+    }
+
+    p {
+      display: block;
+      margin: 1.15em 0 0 0;
+      font-size: 1.3em;
+      letter-spacing: 0.075em;
+      line-height: 1.5em;
+    }
+  }
+
+  .intro  > .style1 {
+    font-size: 1.5em;
+    letter-spacing: 0.075em;
+  }
+
+  .rules header.style1 {
+    padding-bottom: 5em;
+  }
+
+  .footer header.style1 {
+    padding-bottom: 0;
+  }
+}
+
+@include breakpoint(tablet) {
+  .intro > .style1 {
+    font-size: 1.25em;
+  }
+}
+
+@include breakpoint(mobile) {
+  header.style1 {
+    padding: 0 0 1em 0;
+
+    h2 {
+      font-size: 1.5em;
+      letter-spacing: 0.075em;
+      line-height: 1.25em;
+    }
+
+    p {
+      display: block;
+      margin: 0;
+    }
+  }
+
+  #content header.style1 {
+    padding-bottom: 2.5em;
+  }
+}

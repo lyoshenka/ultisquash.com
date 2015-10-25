@@ -1,0 +1,184 @@
+sub {
+  position: relative;
+  top: 0.5em;
+  font-size: 0.8em;
+}
+
+sup {
+  position: relative;
+  top: -0.5em;
+  font-size: 0.8em;
+}
+
+.nobr {
+	white-space: nowrap;
+}
+
+br.clear {
+  clear: both;
+}
+
+table {
+	width: 100%;
+
+	&.default {
+		width: 100%;
+
+		tbody {
+			tr:nth-child(2n+2) {
+				background: #f4f4f4;
+			}
+		}
+
+		td {
+			padding: 0.5em 1em 0.5em 1em;
+		}
+
+		th {
+			text-align: left;
+			font-weight: 400;
+			padding: 0.5em 1em 0.5em 1em;
+		}
+
+		thead {
+			background: $color-black-text;
+			color: #fff;
+		}
+
+		tfoot {
+			background: #eee;
+		}
+	}
+}
+
+form {
+	label {
+		display: block;
+		font-weight: 700;
+		color: $color-black-text;
+	}
+
+	input[type="text"],
+	input[type="email"],
+	input[type="password"],
+	select,
+	textarea {
+		@include vendor('transition', 'all .25s ease-in-out');
+		-webkit-appearance: none;
+		display: block;
+		border: 0;
+		background: #eee;
+		box-shadow: inset 0px 0px 1px 0px #a0a1a7;
+		border-radius: 0.35em;
+		width: 100%;
+		padding: 0.75em 1em 0.75em 1em;
+
+		&:focus {
+			background: #f8f8f8;
+		}
+	}
+
+	input[type="text"],
+	input[type="email"]
+	input[type="password"] {
+		line-height: 1em;
+	}
+
+	select {
+		line-height: 1em;
+	}
+
+	textarea {
+		min-height: 10em;
+	}
+
+	.formerize-placeholder {
+		color: $color-placeholder !important;
+		font-style: italic;
+	}
+
+	::-webkit-input-placeholder {
+		color: $color-placeholder !important;
+		font-style: italic;
+		line-height: 1.35em;
+	}
+
+	:-moz-placeholder {
+		color: $color-placeholder !important;
+		font-style: italic;
+	}
+
+	::-moz-placeholder {
+		color: $color-placeholder !important;
+		font-style: italic;
+	}
+
+	:-ms-input-placeholder {
+		color: $color-placeholder !important;
+		font-style: italic;
+	}
+
+	::-moz-focus-inner {
+		border: 0;
+	}
+}
+
+
+
+@include breakpoint(desktop) {
+  .box {
+    header {
+      margin: 0 0 1.5em 0;
+
+      &.style1 {
+        position: relative;
+        margin: -0.5em 0 0 0;
+        padding-top: 0;
+      }
+    }
+
+    h2 {
+      margin: 0 0 0.75em 0;
+      font-size: 1.15em;
+      letter-spacing: 0.05em;
+    }
+
+    h3 {
+      margin: 0 0 0.5em 0;
+      font-size: 1em;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+    }
+
+    &.post-excerpt {
+      .image.left {
+        position: relative;
+        top: 0.5em;
+        width: 5em;
+      }
+
+      h3, p {
+        margin-left: 7em;
+      }
+    }
+  }
+}
+
+@include breakpoint(mobile) {
+  .box {
+    &.post-excerpt {
+      .image {
+        &.left {
+          position: relative;
+          top: 0.25em;
+          width: 25%;
+          margin: 0;
+        }
+      }
+
+      h3, p {
+        margin-left: 32.5%;
+      }
+    }
+  }
+}
