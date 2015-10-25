@@ -1,31 +1,33 @@
 <div class="wrapper style2">
-  <div class="title">How To Play</div>
+  <div id="how" class="title">How To Play</div>
   <div id="main" class="container">
 
+    {% comment %}
     <!-- Image -->
     <a href="#" class="image featured">
       <img src="images/pic01.jpg" alt="" />
     </a>
+    {% endcomment %}
 
     <!-- Features -->
-    <section id="features">
+    <section class="rules">
       <header class="style1">
-        <h2>Dolor consequat feugiat amet veroeros</h2>
-        <p>Feugiat dolor nullam orci pretium phasellus justo</p>
+        <h2>The Rules of UltiSquash</h2>
+        <p>These rules assume you know how to play <a href="https://en.wikipedia.org/wiki/Ultimate_(sport)">ultimate</a></p>
       </header>
       <div class="feature-list">
-        
+
         <div class="row">
           <div class="6u 12u(mobile)">
             <section>
-              <h3 class="icon fa-comment">Mattis velit diam vulputate</h3>
-              <p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate. Eget mattis at, laoreet vel velit lorem.</p>
+              <h3>Play on a traditional squash court</h3>
+              <p>The game was originally played on the old-style courts (today's <a href="/images/doubles-squash-court.png">doubles courts</a>). On new courts, the larger service boxes may make scoring too easy. But if that's all you have, then make do.</p>
             </section>
           </div>
           <div class="6u 12u(mobile)">
             <section>
-              <h3 class="icon fa-refresh">Lorem ipsum dolor sit veroeros</h3>
-              <p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate. Eget mattis at, laoreet vel velit lorem.</p>
+              <h3>Teams of 3, with equal gender ratio</h3>
+              <p>You can play 2v2 or 4v4. In my experience, the former gets tiring very quickly and the latter feels too cramped. But if give it a try if you like. You might find you prefer it.</p>
             </section>
           </div>
         </div>
@@ -33,14 +35,14 @@
         <div class="row">
           <div class="6u 12u(mobile)">
             <section>
-              <h3 class="icon fa-picture-o">Pretium phasellus justo lorem</h3>
-              <p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate. Eget mattis at, laoreet vel velit lorem.</p>
+              <h3>Score by catching the disc in the services box</h3>
+              <p>Like ultimate, your first point of contact with the floor after catching the disc must be inside the service box. Jumping off the wall is allowed.</p>
             </section>
           </div>
           <div class="6u 12u(mobile)">
             <section>
-              <h3 class="icon fa-cog">Tempus sed pretium orci</h3>
-              <p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate. Eget mattis at, laoreet vel velit lorem.</p>
+              <h3>Clear the disc after each score and turnover</h3>
+              <p>The disc must be "cleared" off the back wall after each goal, each turnover, and at the start of the game. You can can clear the disc by touching the disc to the back wall or by catching a pass off the back wall.</p>
             </section>
           </div>
         </div>
@@ -48,17 +50,51 @@
         <div class="row">
           <div class="6u 12u(mobile)">
             <section>
-              <h3>Aliquam consequat et feugiat</h3>
-              <p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate. Eget mattis at, laoreet vel velit lorem.</p>
+              <h3>Play to 7 points, win by 2, hard at 9</h3>
+              <p>If your team has 7 points and the other team has 5 or less, you win. If they have 6, keep playing until one team is winning by 2. If any team gets to 9 points, they win regardless of other team's score.</p>
             </section>
           </div>
           <div class="6u 12u(mobile)">
             <section>
-              <h3 class="icon fa-check">Dolore laoreet aliquam mattis</h3>
-              <p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate. Eget mattis at, laoreet vel velit lorem.</p>
+              <h3>Stall goes to 5</h3>
+              <p>If you don't throw the disc within 5 seconds of catching it, it is a turnover. You cannot stall unless you are close enough to touch the person with the disc.</p>
             </section>
           </div>
         </div>
+
+        <div class="row">
+          <div class="6u 12u(mobile)">
+            <section>
+              <h3>Physical play is generally acceptable</h3>
+              <p>Boxing out, bodying up, close marks and other contact is allowed. There are no pick calls, though don't set picks on purpose. Only call a foul if it is egregious (e.g. really hard shoves, strips, hitting your hands as you catch the disc, etc)</p>
+            </section>
+          </div>
+          <div class="6u 12u(mobile)">
+            <section>
+              <h3>All walls are inbounds</h3>
+              <p>If the disc hits the walls or the ceiling, keep playing. You can throw it off the walls on purpose if you'd like. Hitting the floor, however, is a turnover.</p>
+            </section>
+          </div>
+        </div>
+
+        {% comment %}
+        - decide teams by flipping
+        - decide O/D by the ol' no-look disc toss to one-hand catch (or up/down call)
+        - start play from the T
+        - you probably want to throw blades
+        - score check on O only
+        - you must set your pivot right on the disc. you cannot reach to pick up the disc
+        - please be careful. serious injuries are rare, but bumps and bruises are common.
+
+        glossary
+        - blade
+        - blender
+        - wall pass
+        - clear
+        - back wall - the wall you face when you play squash
+        {% endcomment %}
+
+
       </div>
       {% comment %}
       <ul class="actions actions-centered">
