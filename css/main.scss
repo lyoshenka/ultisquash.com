@@ -75,6 +75,10 @@ $color-placeholder: #555;
 $color-link: #717479;
 
 
+.center {
+  text-align: center;
+}
+
 @-ms-viewport {
 	width: device-width;
 }
@@ -138,6 +142,26 @@ p, ul, ol, dl, table, blockquote, form {
 
 
 @import 'not_used';
+
+
+.icon {
+  text-decoration: none;
+
+  &:before {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: 1.25em;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  > .label {
+    display: none;
+  }
+}
 
 
 
@@ -360,30 +384,31 @@ ol {
 	background: $color-black;
 	color: #eee;
 	color: rgba(255, 255, 255, 0.5);
+  text-align: center;
 
 	h1, h2, h3, h4, h5, h6, strong, b, a {
 		color: #fff;
 	}
 
-	hr {
-		border-top-color: #333;
-		border-top-color: rgba(255, 255, 255, 0.05);
-	}
+	// hr {
+	// 	border-top-color: #333;
+	// 	border-top-color: rgba(255, 255, 255, 0.05);
+	// }
 
-	form {
-		input[type="text"],
-		input[type="email"],
-		input[type="password"],
-		select,
-		textarea {
-			background: #ccc;
-			box-shadow: none;
+	// form {
+	// 	input[type="text"],
+	// 	input[type="email"],
+	// 	input[type="password"],
+	// 	select,
+	// 	textarea {
+	// 		background: #ccc;
+	// 		box-shadow: none;
 
-			&:focus {
-				background: #fff;
-			}
-		}
-	}
+	// 		&:focus {
+	// 			background: #fff;
+	// 		}
+	// 	}
+	// }
 
 	input[type="button"],
 	input[type="submit"],

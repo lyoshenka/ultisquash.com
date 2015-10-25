@@ -8,6 +8,10 @@ header.style1 {
 	p, a {
 		color: $color-grey-text-header;
 	}
+
+  a.highlight-link {
+    color: $color-red;
+  }
 }
 
 input[type="button"],

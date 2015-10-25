@@ -1,10 +1,11 @@
 # Site settings
 baseurl: "" # the subpath of your site, e.g. /blog/
-#sass_dir: _sass
+sass_dir: _sass
 
 # Build settings
 markdown: kramdown
-
+#kramdown:
+#  auto_ids:  false
 
 ### site serving configuration ###
 exclude: [CNAME, README.txt, LICENSE.txt, .gitignore]
@@ -12,16 +13,7 @@ permalink: / ## disables post output
 timezone: null
 highlighter: pygments
 
-
-### template colors, used site-wide via css ###
-colors:
-  black:     '#111111'
-  white:     '#f8f8f8'
-  blue:      '#49a7e9'
-  green:     '#9bcf2f'
-  purple:    '#c869bf'
-  orange:    '#fab125'
-  turquoise: '#0fbfcf'
-
-#kramdown:
-#  auto_ids:  false
+name: Ultisquash
+description: 3-on-3 ultimate on a squash court
+url: http://ultisquash.com
+url_encoded: http%3A%2F%2Fultisquash.com
