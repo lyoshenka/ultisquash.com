@@ -390,6 +390,13 @@ ol {
 		color: #fff;
 	}
 
+  a.icon {
+    color: $color-grey-text;
+    &:hover {
+      color: #fff;
+    }
+  }
+
 	// hr {
 	// 	border-top-color: #333;
 	// 	border-top-color: rgba(255, 255, 255, 0.05);

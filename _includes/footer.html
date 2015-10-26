@@ -1,7 +1,7 @@
 <div class="wrapper footer-wrapper">
   <div id="play" class="title">Hit the Court</div>
   <div class="container footer">
-    
+
     <header class="style1">
       <h2>What are you waiting for? Go play!</h2>
       <p>Questions? Comments? Looking for people to play with? It's all on <a class="highlight-link" href="https://www.reddit.com/r/ultisquash/">r/ultisquash</a>.</p>
@@ -21,7 +21,14 @@
             <a href="https://plus.google.com/share?url={{site.url_encoded}}" target="_blank" class="icon fa-google-plus fa-2x"></a>
           </li>
           <li>
-            <a href="http://www.reddit.com/submit/?url={{site.url_encoded}}" target="_blank" class="icon fa-reddit fa-2x"></a>
+            <a href="https://pinterest.com/pin/create/button/?url={{site.url_encoded}}&description={{site.description_encoded}}" target="_blank" class="icon fa-pinterest fa-2x"></a>
+          </li>
+          <li>
+            {% comment %}<a href="http://www.reddit.com/submit/?url={{site.url_encoded}}" target="_blank" class="icon fa-reddit fa-2x"></a>{% endcomment %}
+            <a href="http://www.reddit.com/r/ultisquash" target="_blank" class="icon fa-reddit fa-2x"></a>
+          </li>
+          <li>
+            <a href="mailto:?&subject=wanna+play+ultisquash%3F&body={{site.url_encoded}}" class="icon fa-envelope fa-2x"></a>
           </li>
         </ul>
       </div>
