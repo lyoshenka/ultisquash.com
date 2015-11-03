@@ -503,3 +503,20 @@ ol {
 @import 'style1';
 @import 'style2';
 @import 'style3';
+
+
+.social {
+  margin-top: 20px;
+  a {
+    margin: 10px;
+  }
+}
+
+@include breakpoint(desktop) {
+  .social {
+    margin-top: 40px;
+    a {
+      margin: 20px;
+    }
+  }
+}
