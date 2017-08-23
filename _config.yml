@@ -11,7 +11,7 @@ markdown: kramdown
 exclude: [CNAME, README.txt, LICENSE.txt, .gitignore]
 permalink: / ## disables post output
 timezone: null
-highlighter: pygments
+highlighter: rouge
 
 name: Ultisquash
 description: 3-on-3 ultimate on a squash court
